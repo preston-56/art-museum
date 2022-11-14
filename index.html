@@ -1,18 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Museum</title>
-    <style>
+<html>
+    <head>
+        <link href="sytles/styles.css">
+        <!-- my grid css -->
+        <style>
 
-    </style>
-</head>
-<body>
-   <p> Hello World</p>
-</body>
-<script>
+            #item1 {
+                background-color: yellow;
+                grid-area: navbar;
+                padding: 10px;
+                margin: 5px;
+            }
 
-</script>
+            #item2 {
+                background-color: blue;
+                grid-area: header;
+                padding: 10px;
+                margin: 5px;
+               
+
+            }
+
+            #item3 {
+                background-color: brown;
+                grid-area: mainContent;
+                padding: 10px;
+                margin: 5px;
+                
+
+            }
+
+            #item4 {
+                background-color: red;
+                grid-area: leftMenu;
+                padding: 10px;
+                margin: 5px;
+               
+            }
+
+            #item5 {
+                background-color: green;
+                grid-area: rightAds;
+                padding: 10px;
+                margin: 5px;
+              
+
+            }
+
+            #item6 {
+                background-color: violet;
+                grid-area: footer;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .grid-container {
+            /* define the container as a CSS grid */
+            display: grid;
+            grid-template-areas:
+            'navbar navbar navbar navbar navbar navbar'
+            'header header header header header header'
+            'leftMenu leftMenu mainContent mainContent mainContent rightAds'
+            'footer footer footer footer footer footer'
+            ;
+
+            }
+        </style>
+    </head>
+    <body>
+        <!-- defining an overall container -->
+        <!-- element for definition of partitions -->
+        <div class="grid-container">
+            <!-- 4 rows -->
+            <!-- navbar -->
+            <div id="item1">
+            <!-- another grid inside -->
+1      
+            </div>
+
+            <!-- header -->
+            <div id="item2">
+2            
+            </div>
+
+            <!-- main content -->
+            <div id="item3">
+3       
+            </div>
+
+            <!-- left menu -->
+            <div id="item4">
+4
+            </div>
+
+            <!-- right ads menu-->
+            <div id="item5">
+5        
+            </div>
+
+            <!-- footer -->
+            <div id="item6">
+6      
+            </div>
+        </div>
+    </body>
 </html>
